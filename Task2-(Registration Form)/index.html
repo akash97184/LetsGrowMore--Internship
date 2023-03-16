@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollement Form</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+	<div class="main-container">
+		<div class="form-container">
+			<h1>Student Enrollment Form</h1>
+			<form onsubmit="return false;">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" placeholder="Enter your name">
+	
+				<label for="email">Email:</label>
+				<input type="text" id="email" name="email" placeholder="Enter your email">
+	
+				<label for="website">Website:</label>
+				<input type="text" id="website" name="website" placeholder="Enter your website">
+	
+				<label for="course">Course:</label>
+				<select id="course" name="course">
+					<option value="math">CSE</option>
+					<option value="english">ISE</option>
+					<option value="science">ECE</option>
+				</select>
+	
+				<div class="skills">
+					<label>Skills:</label>
+					<input type="checkbox" id="skill1"  name="skill1" value="HTML">
+					<label for="skill1">HTML</label>
+		
+					<input type="checkbox" id="skill2"  name="skill2" value="CSS">
+					<label for="skill2">CSS</label>
+		
+					<input type="checkbox" id="skill3"  name="skill3" value="JavaScript">
+					<label for="skill3">JavaScript</label>
+		
+					<input type="checkbox" id="skill4"  name="skill4" value="C++">
+					<label for="skill4">C++</label>
+				</div>
+	
+				<input class="button2" type="submit" value="Submit" onclick="submitForm()">
+			</form>
+		</div>
+		<div class="table-container" >
+			<table id="enrollment-table">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Email</th>
+						<th>Website</th>
+						<th>Course</th>
+						<th>Skills</th>
+					</tr>
+				</thead>
+				<tbody id="enrollment-body"></tbody>
+			</table>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
+    
